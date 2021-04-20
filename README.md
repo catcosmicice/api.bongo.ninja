@@ -1,15 +1,9 @@
-# meme-server
-The microservice that powers [Dank Memer's](https://goo.gl/HL3zBi) Image Generation.
+# Image Generation Server
 
-View a live instance [here](https://dankmemer.services)
+The source code behind what runs at [api.bongo.ninja](https://api.bongo.ninja).
 
-# Starting meme-server
-install rethinkdb [here](https://github.com/rethinkdb/rethinkdb) and get that running
+> *Based on [DankMemer's imgen](https://github.com/DankMemer/imgen)*
 
-```bash
-git clone
-cd meme-server
-./start.sh
-```
+Feel free to contribute (:
 
-You can use this in conjunction with pm2 or tmux to ensure it runs after exiting the SSH session.
+&copy; cosmicice 2021. This project is licensed under the [MIT License](LICENSE.md).

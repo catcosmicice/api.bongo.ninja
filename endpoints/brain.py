@@ -13,7 +13,7 @@ class Brain(Endpoint):
 
     def generate(self, avatars, text, usernames, kwargs):
         base = Image.open(self.assets.get('assets/brain/brain.bmp'))
-        font = self.assets.get_font('assets/fonts/verdana.ttf', size=30)
+        font = self.assets.get_font('assets/fonts/verdana.ttf', size=20)
 
         if len(text.split(',')) < 4:
             a, b, c, d = 'you need, four items, for this, command (split by commas)'.split(',')

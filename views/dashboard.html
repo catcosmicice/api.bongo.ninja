@@ -1,6 +1,6 @@
 <head>
   {% include "partials/header.html" %}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
@@ -9,15 +9,15 @@
     <div style="margin-top: 50px;" class="flex">
       <h1 class="welcome">Welcome {{ name }}</h1>
       {% if admin %}
-        <a class="button" href="/admin">Admin Dashboard</a>
+        <button class="nucb" onclick="window.location.href='/admin';">Admin Dashboard</button>
       {% endif %}
     </div>
     <div class="flex flex-row">
-      <h3 style="display: inline;">Applications</h3>
-      <a class="button" href="/request">Request New</a>
+      <h3 style="display: inline; padding: 0.5rem;">Applications</h3>
+      <button class="nucb" onclick="window.location.href='/request';">Request New</button>
     </div>
     <hr>
-    <div class="flex flex-rox">
+    <div class="flex flex-row">
     {% for key in keys %}
       <div class="app-card" style="width: 300px;">
           <h2 class="app-title">{{ key['name'] }}</h2>

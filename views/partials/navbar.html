@@ -1,17 +1,19 @@
-<div class="nav">
-    <span class="nav-title">api.bongo.ninja</span>
+<header>
+    <h1 class="nav-title">
+        <a href="/">api.bongo.ninja</a>
+    </h1>
     <div class="nav-links">
         <div class="nav-item">
-            <a class="nav-link {{ active_home }}" href="/">HOME</a>
+            <button class="{{ active_home }}" onclick="window.location.href='/';">Home</button>
         </div>
         <div class="nav-item">
-            <a class="nav-link {{ active_stats }}" href="/stats">STATISTICS</a>
+            <button class="{{ active_stats }}" onclick="window.location.href='/stats';">Statistics</button>
         </div>
         <div class="nav-item">
-            <a class="nav-link {{ active_docs }}" href="/documentation">DOCUMENTATION</a>
+            <button class="{{ active_docs }}" onclick="window.location.href='/documentation';">Documentation</button>
         </div>
         <div class="nav-item">
-            <a class="nav-link {{ active_dash }}" href="/dashboard">DASHBOARD</a>
+            <button class="{{ active_dash }}" onclick="window.location.href='/dashboard';">Dashboard</button>
         </div>
     </div>
-</div>
+</header>
